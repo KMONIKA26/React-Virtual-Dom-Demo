@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vanilla DOM Demonstrates</title>
+</head>
+<body>
+  <h1>Vanilla JS DOM Update</h1>
+  <button onclick="changeTitle()">Change Title (Vanilla JS)</button>
+  <p id="count">DOM Updates: 0</p>
+
+  <script>
+    let count = 0;
+
+    function changeTitle() {
+      document.title = "New Title " + count;
+      count++;
+      document.getElementById("count").innerText = "DOM Updates: " + count;
+    }
+  </script>
+</body>
+</html>
+<!-- This is a simple HTML document that demonstrates how to update the DOM using vanilla JavaScript. -->
+<!-- The document includes a button that, when clicked, changes the document title and updates a count
+of how many times the title has been changed. -->
+<!-- The script uses basic DOM manipulation methods like document.title and getElementById to achieve this functionality. -->
